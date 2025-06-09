@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: connection-example
-    env: ruby
-    region: ohio
-    buildCommand: bundle install
-    startCommand: bundle exec ruby main.rb
-    autoDeploy: false
-    
