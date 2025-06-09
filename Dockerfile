@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 COPY . . 
 RUN bundle install
 
-ENTRYPOINT ["bundle", "exec", "ruby", "main.rb"]
+ENTRYPOINT ["bundle", "exec", "ruby", "main.rb", "-o", "0.0.0.0"]
